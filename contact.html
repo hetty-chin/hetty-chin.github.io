@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#4aaaa5;">
+        <meta type="description" content="This is a form for contacting Hetty Chin.">
+        <title>Contact Hetty Chin</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+    <body>  
+            <div class="MainBody">
+    
+                <div class="HeaderBody" id="myHeader" style="left: 0px;">
+                    <div class="clearfix">
+                        <div class="HeaderNav">
+                            <h1 class="MyName">Hetty Chin</h1>
+    
+                                <div class="TopNav">
+                                    <p class="Contact"><a href="contact.html" target="_blank">Contact</a></p>
+                                </div>                            
+                                <div class="TopNav">
+                                    <p class="Portfolio"><a href="portfolio.html" target="_blank">Portfolio</a></p>
+                                </div>
+                                <div class="TopNav">
+                                    <p class="About"><a href="index.html" target="_blank">About</a></p>
+                                </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+            <div class="Main-content">
+                
+                <div class="Header">
+                    <h1 class="SubHead">Contact</h1>
+                </div>
+
+                <div class="Main-content-details">
+                    <div class="Main-Text">
+
+                        <form id="contact-form" method="post" action="">
+                            <p>Name</p>
+                            <input name="name" type="text" class="form-control" placeholder="Jay Smith" required>
+                            <br>
+                            <p>Email</p>
+                            <input name="email" type="email" class="form-control" placeholder="example@gmail.com" required>
+                            <br>
+                            <p>Message</p>
+                            <textarea name="message" class="form-control" placeholder="Message" rows="10" required></textarea><br>
+
+                            <input type="submit" class="form-control submit" value="Submit">
+                        </form>
+
+
+                    </div>
+                </div>
+            
+            </div>    
+            
+            <footer>
+    
+            </footer>  
+            </div>
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                  } else {
+                    header.classList.remove("sticky");
+                  }
+                }
+                </script>
+        </body>
